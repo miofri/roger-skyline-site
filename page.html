@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<style>
+	<title>Roger Page</title>
+	<style type="text/css">
 		h1 {
 			font-family: 'Courier New', Courier, monospace;
 			font-size: 72px;
@@ -13,11 +13,21 @@
 			text-align: center;
 		}
 		#topbody {
+			box-sizing:border-box;
 			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 			font-size: 18px;
 			background-color: aqua;
-			height: 50px;
-			width: 200px;
+			height: auto;
+			width: 625px;
+			padding:2% 0;
+			text-align: center;
+			margin: auto;
+		}
+		#inputform {
+			margin: auto;
+			background-color: red;
+			width: 330px;
+			text-align: left;
 		}
 	</style>
 </head>
@@ -25,6 +35,26 @@
 	<h1>Roger-Skyline-1</h1>
 	<div id="topbody">
 		<p>This is the page for roger's web server's part.</p>
+		<div id="inputform">
+			<form>
+				<table>
+					<tr>
+						<td>First name:</td>
+						<td>
+							<input type="text" name="fname" id="fname">
+						</td>
+					</tr>
+					<tr>
+						<td>Last name:</td>
+						<td>
+							<input type="text" name="lname" id="lname"><br>
+						</td>
+					</tr>
+					<td></td>
+					<td><input type="button" value="Submit"></td>
+				</table>
+			</form>
+		</div>
 	</div>
 </body>
 </html>
